@@ -23,7 +23,7 @@ import lombok.Setter;
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Getter
 @Setter
-public class AirlineMangers extends AbstractEntity {
+public class AirlineManagers extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
 

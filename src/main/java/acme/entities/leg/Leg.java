@@ -1,5 +1,5 @@
 
-package acme.entities.legs;
+package acme.entities.leg;
 
 import java.util.Date;
 
@@ -17,7 +17,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Legs extends AbstractEntity {
+public class Leg extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
