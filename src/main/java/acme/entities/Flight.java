@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
 
@@ -35,6 +36,7 @@ public class Flight extends AbstractEntity {
 	private String		description;
 
 	@OneToMany(mappedBy = "flight")
+	@Valid
 	private List<Legs>	legs;
 
 
