@@ -1,5 +1,5 @@
 
-package acme.entities;
+package acme.entities.flight;
 
 import java.util.Date;
 import java.util.List;
@@ -13,6 +13,7 @@ import javax.validation.constraints.Size;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
+import acme.entities.legs.Legs;
 import lombok.Getter;
 import lombok.Setter;
 
