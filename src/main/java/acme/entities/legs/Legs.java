@@ -19,32 +19,34 @@ import lombok.Setter;
 @Setter
 public class Legs extends AbstractEntity {
 
+	private static final long	serialVersionUID	= 1L;
+
 	@Mandatory
 	@Column(unique = true)
-	private Integer	flightNumber;
+	private Integer				flightNumber;
 
 	@Mandatory
-	private Date	scheduledDeparture;
+	private Date				scheduledDeparture;
 
 	@Mandatory
-	private Date	scheduledArrival;
+	private Date				scheduledArrival;
 
 	@Mandatory
 	@Min(0)
-	private Double	duration;
+	private Double				duration;
 
 	@Mandatory
 	@Enumerated(EnumType.STRING)
-	private String	status;
+	private String				status;
 
 	@Mandatory
-	private String	depatureAirport;
+	private String				depatureAirport;
 
 	@Mandatory
-	private String	arrivalAirport;
+	private String				arrivalAirport;
 
 	@Mandatory
-	private String	aircraft;
+	private String				aircraft;
 
 
 	public enum Status {

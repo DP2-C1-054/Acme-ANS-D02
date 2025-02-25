@@ -22,23 +22,25 @@ import lombok.Setter;
 @Setter
 public class Flight extends AbstractEntity {
 
-	@Mandatory
-	@Size(max = 50)
-	private String		tag;
+	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	private Boolean		requiresSelfTransfer;
+	@Size(max = 50)
+	private String				tag;
+
+	@Mandatory
+	private Boolean				requiresSelfTransfer;
 
 	@Mandatory
 	@Min(0)
-	private Integer		cost;
+	private Integer				cost;
 
 	@Optional
-	private String		description;
+	private String				description;
 
 	@OneToMany(mappedBy = "flight")
 	@Valid
-	private List<Legs>	legs;
+	private List<Legs>			legs;
 
 
 	public Date getScheduledDeparture() {
